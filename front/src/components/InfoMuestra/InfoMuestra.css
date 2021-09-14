@@ -1,0 +1,77 @@
+#cards {
+  width: 70%;
+  height: 250px;
+  margin-bottom: 3%;
+}
+#img {
+  height: 250px;
+  position: relative;
+}
+#text {
+  position: absolute;
+  margin-top: -4%;
+  width: 50%;
+  background-color: rgba(128, 128, 128, 0.616);
+  font-family: portada-light;
+  font-weight: bold;
+  text-align: center;
+}
+#text small {
+  margin-top: 0%;
+  padding-top: 0px;
+}
+.infomuestra {
+  width: 100%;
+}
+.card-body a {
+  text-decoration: none;
+}
+#parraf {
+  font-family: portada-light;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+#title {
+  font-family: portada-light;
+  font-size: 20px;
+  color: #d80026;
+  font-weight: bold;
+  text-align: center;
+}
+.noticia {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+
+  margin-left: 4%;
+}
+.noticiaImg {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.noticiaImg p {
+  background-color: rgba(128, 128, 128, 0.445);
+  padding-left: 4px;
+  color: rgb(36, 36, 36);
+}
+.noticiaImg img {
+  height: 225px;
+  width: 100%;
+}
+.noticiasTitulo {
+  width: 50%;
+  background-color: rgb(212, 232, 250);
+  height: 250px;
+}
+.noticiasTitulo h2 {
+  text-align: center;
+  padding-top: 6%;
+}
+.noticiasTitulo p {
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 4px;
+  padding-right: 4px;
+}

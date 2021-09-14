@@ -1,0 +1,46 @@
+.contenedorNot {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 45%;
+  margin-bottom: 4%;
+}
+
+.contenedorNot img {
+  width: 100%;
+  height: 300px;
+}
+.seccionNot {
+  background-color: rgb(134, 134, 132);
+}
+.seccionNot h5 {
+  padding-left: 8px;
+  color: black;
+}
+.titularNot {
+  width: 100%;
+  background-color: rgb(241, 240, 240);
+}
+.titularFecha {
+  background-color: rgb(241, 240, 240);
+  text-align: end;
+  color: blue;
+  padding-right: 5px;
+}
+.titularNot h1 {
+  width: 95%;
+  text-align: center;
+  font-size: 25px;
+  font-family: portada-light;
+  color: #d80026;
+  font-weight: bold;
+}
+.titularNot p {
+  text-align: justify;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+  font-family: portada-light;
+  font-size: 25px;
+}

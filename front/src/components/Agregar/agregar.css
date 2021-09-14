@@ -1,0 +1,22 @@
+.agregar {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.contenedorAgregar {
+}
+.contenedorAgregar h1 {
+  text-align: center;
+}
+.formAgregar {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.formAgregar button {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}

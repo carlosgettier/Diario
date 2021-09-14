@@ -1,0 +1,70 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footerPrimera {
+  display: flex;
+  flex-direction: row;
+  padding-top: 7%;
+  padding-bottom: 2%;
+  background-color: rgba(0, 0, 0, 0.904);
+  justify-content: center;
+}
+.logoFooter {
+  padding-left: 3%;
+  width: 30%;
+  color: rgba(240, 248, 255, 0.74);
+  text-align: center;
+}
+.footerInstitucional {
+  width: 30%;
+  padding-left: 3%;
+  color: rgba(240, 248, 255, 0.74);
+}
+.footerInstitucional p {
+  border-bottom: 0.5px solid white;
+}
+.footerContactanos {
+  width: 30%;
+  padding-left: 3%;
+  color: rgba(240, 248, 255, 0.74);
+}
+.footerRedes {
+  width: 100%;
+  background-color: rgb(44, 44, 44);
+}
+.contenedorFooter {
+  margin-top: 2%;
+  margin-left: 4%;
+  margin-bottom: 2%;
+}
+.footerRedes .redF i {
+  background-color: rgb(4, 96, 133);
+  font-size: 30px;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 100%;
+}
+.footerRedes .redF i:hover {
+  background-color: red;
+}
+.footerRedes .redT i {
+  background-color: rgb(9, 153, 209);
+  font-size: 25px;
+  color: white;
+  padding: 12px;
+  border-radius: 100%;
+}
+.footerRedes .redT i:hover {
+  background-color: red;
+}
+.footerRedes .redI i {
+  background-color: rgb(246, 94, 88);
+  font-size: 25px;
+  color: white;
+  padding: 13px;
+  border-radius: 100%;
+}
+.footerRedes .redI i:hover {
+  background-color: red;
+}
