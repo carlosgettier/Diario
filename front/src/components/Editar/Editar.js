@@ -100,7 +100,7 @@ export const Editar = () => {
                     </div>
                     <div className="mb-3">
                         <label>tipo de noticia</label>
-                        <select name="tipo" className="form-control" name="select"
+                        <select name="tipo" className="form-control"
                             onChange={handleInput}>
                             <option value="#">todas las noticias</option>
                             <option value="locales" >Local</option>
