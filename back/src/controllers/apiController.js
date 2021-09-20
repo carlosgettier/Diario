@@ -2,17 +2,56 @@ const { sequelize } = require("../database/models")
 const db = require("../database/models")
 const fs = require('fs');
 const path = require("path")
+const Blob = require("buffer")
+const buffer = require("buffer")
+
+
 
 
 let apiController = {
     all: async (req, res) => {
-        const todos = await db.noti.findAll({
 
-            include: [
-                { association: 'imagenPrincipal' }]
+        const todos = await db.noti.findAll({
+            include: [{ association: 'imagenPrincipal' }]
         })
 
+        res.json(todos)
 
+    },
+    local: async (req, res) => {
+        const todos = await db.noti.findAll({
+            where: {
+                tipo: 'locales'
+            },
+            include: [{ association: 'imagenPrincipal' }]
+        })
+        res.json(todos)
+    },
+    provinciales: async (req, res) => {
+        const todos = await db.noti.findAll({
+            where: {
+                tipo: 'provincial'
+            },
+            include: [{ association: 'imagenPrincipal' }]
+        })
+        res.json(todos)
+    },
+    nacionales: async (req, res) => {
+        const todos = await db.noti.findAll({
+            where: {
+                tipo: 'nacional'
+            },
+            include: [{ association: 'imagenPrincipal' }]
+        })
+        res.json(todos)
+    },
+    deportes: async (req, res) => {
+        const todos = await db.noti.findAll({
+            where: {
+                tipo: 'deportes'
+            },
+            include: [{ association: 'imagenPrincipal' }]
+        })
         res.json(todos)
     },
     pedir: async (req, res) => {
@@ -34,6 +73,7 @@ let apiController = {
                     return {
                         nombre: name,
                         idNoticia: idNoticia,
+                        data: data
 
                     }
                 }
@@ -57,6 +97,7 @@ let apiController = {
                 )
             }
 
+
             res.json(todos)
         }
         catch (err) {
@@ -66,10 +107,11 @@ let apiController = {
 
     },
     edit: async (req, res) => {
-        const todos = await db.noti.findByPk(req.params.id, {
-            include: [
-                { association: 'imagenPrincipal' }]
-        }
+        const todos = await db.noti.findByPk(req.params.id)
+        res.json(todos)
+    },
+    img: async (req, res) => {
+        const todos = await db.img.findAll({ where: { idNoticia: req.params.id } }
         )
         res.json(todos)
     },
@@ -90,6 +132,8 @@ let apiController = {
                 idNoticia: req.params.id
             }
         })
+
+
         res.json(todos)
     }
 }

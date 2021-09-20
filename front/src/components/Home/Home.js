@@ -15,6 +15,8 @@ import imagen13 from '../../assets/image/deportes3.jpg'
 import imagen14 from '../../assets/image/deportes4.jpg'
 import { Noticia } from '../Noticia/Noticia'
 import './home.css'
+import { Link } from 'react-router-dom'
+
 
 export const Home = () => {
     return (
@@ -93,24 +95,34 @@ export const Home = () => {
                         </div>
                         <ul className="lista">
                             <li className="listaVinculos">
-                                <p className="icono"><i class="fas fa-envelope-open-text"></i></p>
-                                <p className="link">CORREO DE LECTORES</p>
+                                <Link>
+                                    <p className="icono"><i class="fas fa-envelope-open-text"></i></p>
+                                    <p className="link">CORREO DE LECTORES</p>
+                                </Link>
                             </li>
                             <li className="listaVinculos">
-                                <p className="icono"><i class="far fa-newspaper"></i></p>
-                                <p className="link">CLASIFICADOS</p>
+                                <Link>
+                                    <p className="icono"><i class="far fa-newspaper"></i></p>
+                                    <p className="link">CLASIFICADOS</p>
+                                </Link>
                             </li>
                             <li className="listaVinculos">
-                                <p className="icono"><i class="fas fa-phone-square-alt"></i></p>
-                                <p className="link">TELEFONOS UTILES</p>
+                                <Link>
+                                    <p className="icono"><i class="fas fa-phone-square-alt"></i></p>
+                                    <p className="link">TELEFONOS UTILES</p>
+                                </Link>
                             </li>
                             <li className="listaVinculos">
-                                <p className="icono"><i class="fas fa-cross"></i></p>
-                                <p className="link">AVISOS FUNEBRES</p>
+                                <Link>
+                                    <p className="icono"><i class="fas fa-cross"></i></p>
+                                    <p className="link">AVISOS FUNEBRES</p>
+                                </Link>
                             </li>
                             <li className="listaVinculos">
-                                <p className="icono"><i class="fas fa-first-aid"></i></p>
-                                <p className="link">FARMACIAS DE TURNO</p>
+                                <Link>
+                                    <p className="icono"><i class="fas fa-first-aid"></i></p>
+                                    <p className="link">FARMACIAS DE TURNO</p>
+                                </Link>
                             </li>
 
                         </ul>

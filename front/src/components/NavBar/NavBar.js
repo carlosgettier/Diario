@@ -19,17 +19,16 @@ export const NavBar = () => {
                                 <Link className="nav-link active" to="/">Inicio</Link>
 
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Deportes</a>
-                            </li>
+                            <li className="nav-item"><Link className="nav-link" to="/noticias/Deportes">Deportes</Link></li>
+
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Institucional
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a className="dropdown-item" href="#">¿Quienes somos?</a></li>
-                                    <li><a className="dropdown-item" href="#">Contactos</a></li>
-                                    <li><a className="dropdown-item" href="#">Publicita</a></li>
+                                    <li><Link className="dropdown-item" to="/noticias/nosotros">¿Quienes Somos?</Link></li>
+                                    <li><Link className="dropdown-item" to="/noticias/contactos">contactos</Link></li>
+                                    <li><Link className="dropdown-item" to="/noticias/locales">publicidad</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown">
@@ -38,16 +37,13 @@ export const NavBar = () => {
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><Link className="dropdown-item" to="/noticias/locales">locales</Link></li>
-                                    <li><a className="dropdown-item" href="#">Provinciales</a></li>
-                                    <li><a className="dropdown-item" href="#">Nacionales</a></li>
+                                    <li><Link className="dropdown-item" to="/noticias/provinciales">Provinciales</Link></li>
+                                    <li><Link className="dropdown-item" to="/noticias/nacionales">Nacionales</Link></li>
+
                                 </ul>
                             </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Cultura</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Turismo</a>
-                            </li>
+                            <li className="nav-item"><Link className="nav-link" to="/noticias/cultura">Cultura</Link></li>
+                            <li className="nav-item"><Link className="nav-link" to="/noticias/turismo">Turismo</Link></li>
                         </ul>
 
                     </div>
@@ -56,7 +52,7 @@ export const NavBar = () => {
             </nav>
 
             <div className="fecha">
-                <p>viernes 20 de agoso de 2021</p>
+
             </div>
 
         </div>

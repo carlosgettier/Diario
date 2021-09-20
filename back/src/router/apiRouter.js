@@ -18,9 +18,13 @@ const imagenUp = multer({
 
 /*------ noticias------*/
 router.get('/noticias', apiController.all)
-router.get("/peliculas/pedido/:dato", apiController.pedir)
+router.get("/noticas/pedido/locales", apiController.local)
+router.get("/noticas/pedido/provinciales", apiController.provinciales)
+router.get("/noticas/pedido/nacionales", apiController.nacionales)
+router.get("/noticas/pedido/deportes", apiController.deportes)
 router.post("/noticias", imagenUp, apiController.add)
 router.get("/noticias/buscar/:id", apiController.edit)
+router.get("/noticias/imagen/:id", apiController.img)
 router.put("/peliculas/editar/:id", apiController.editado)
 router.delete("/noticias/borrar/:id", apiController.delete)
 

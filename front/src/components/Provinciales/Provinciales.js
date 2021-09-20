@@ -1,18 +1,14 @@
 import React from 'react'
-import './locales.css'
-import { Noticia } from '../Noticia/Noticia'
-import futbol from '../../assets/image/futbol.jpg'
-import { useState, useEffect } from 'react'
 import { InfoMuestra } from '../InfoMuestra/InfoMuestra'
 import { Propaganda } from '../Propaganda/Propaganda'
+import { useEffect, useState } from 'react'
 
-export const Locales = () => {
-
+export const Provinciales = () => {
 
     const [local, setLocal] = useState([])
 
     useEffect(async () => {
-        const res = await fetch(`http://localhost:3001/api/noticas/pedido/locales`)
+        const res = await fetch(`http://localhost:3001/api/noticas/pedido/provinciales`)
         const data = await res.json()
         setLocal(data)
 
@@ -20,10 +16,11 @@ export const Locales = () => {
     }, [])
 
 
+
     return (
         <div className="localInfo">
             <div className="secciones">
-                <h5>Noticias locales</h5>
+                <h5>Noticias Provinciales</h5>
             </div >
             <hr />
             <div className="local">

@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import './agregar.css'
+
 import axios from 'axios'
 
-export const Agregar = () => {
+export const Editar = () => {
 
     const historia = useHistory()
 
@@ -47,7 +47,7 @@ export const Agregar = () => {
         formDate.append('aprobada', data.secundaria)
         formDate.append('tipo', data.select)
         axios({
-            method: 'post',
+            method: 'put',
             url: 'http://localhost:3001/api/noticias',
             data: formDate
 
@@ -116,4 +116,5 @@ export const Agregar = () => {
             </div>
         </div >
     )
+
 }

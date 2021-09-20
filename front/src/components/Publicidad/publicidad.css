@@ -1,0 +1,19 @@
+.agregarPublicidad {
+  display: flex;
+  flex-direction: column;
+}
+.agregarPublicidad h1 {
+  text-align: center;
+}
+.formPubli {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#publiBoton {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}

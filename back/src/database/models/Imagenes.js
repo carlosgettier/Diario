@@ -15,6 +15,10 @@ module.exports = function (sequelize, DataTypes) {
         idNoticia: {
             type: DataTypes.INTEGER,
             notNull: true
+        },
+        data: {
+            type: DataTypes.INTEGER,
+            notNull: true
         }
 
 

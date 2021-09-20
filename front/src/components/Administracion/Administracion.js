@@ -38,6 +38,9 @@ export const Administracion = () => {
                             <li className="nav-item">
                                 <Link to="/noticias/administracion/nuevas" className="nav-link active">NUEVAS NOTICIAS</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link to="/noticias/administracion/publicidad" className="nav-link active">PUBLICIDAD</Link>
+                            </li>
 
                         </ul>
                     </div>
