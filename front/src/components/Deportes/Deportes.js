@@ -1,5 +1,4 @@
 import React from 'react'
-import { Noticia } from '../Noticia/Noticia'
 import { Propaganda } from '../Propaganda/Propaganda'
 import { useEffect, useState } from 'react'
 import { InfoMuestra } from '../InfoMuestra/InfoMuestra'
@@ -8,12 +7,13 @@ export const Deportes = () => {
 
     const [local, setLocal] = useState([])
 
-    useEffect(async () => {
+    useEffect(() => {
+      const fetchData = async () => {
         const res = await fetch(`http://localhost:3001/api/noticas/pedido/deportes`)
         const data = await res.json()
         setLocal(data)
-
-
+      }
+      fetchData()
     }, [])
 
     return (
