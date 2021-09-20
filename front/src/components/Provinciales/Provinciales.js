@@ -7,11 +7,13 @@ export const Provinciales = () => {
 
     const [local, setLocal] = useState([])
 
-    useEffect(async () => {
-        const res = await fetch(`http://localhost:3001/api/noticas/pedido/provinciales`)
-        const data = await res.json()
-        setLocal(data)
-
+    useEffect(() => {
+        const fetchData = async() => {
+          const res = await fetch(`http://localhost:3001/api/noticas/pedido/provinciales`)
+          const data = await res.json()
+          setLocal(data)
+        }
+        fetchData()
 
     }, [])
 
