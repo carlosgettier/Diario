@@ -30,7 +30,7 @@ export const Home = () => {
                     <div>
                         <h5 className="seccio">Deportes</h5>
                     </div>
-                    <img src={imagen} />
+                    <img src={imagen} alt="deporte de alto riesgo" />
                     <div className="titularImagen">
                         <h1>Deporte de alto riesgo</h1>
                         <p>Cada dia se empieza a practicar mas esta ckase de deportes en los andes</p>
@@ -41,7 +41,7 @@ export const Home = () => {
                         <div>
                             <h5 className="seccionSecundaria">Politica</h5>
                         </div>
-                        <img src={imagen2} />
+                        <img src={imagen2} alt="politica" />
                         <div className="titularSecundario">
                             <h1>El senado trata la ley de humedales</h1>
                             <p>Despues de mucho tiempo de tener encajonado esta ley, hoy se empieza a tratar en el senado</p>
@@ -51,7 +51,7 @@ export const Home = () => {
                         <div>
                             <h5 className="seccionTercera">Cultura</h5>
                         </div>
-                        <img src={imagen3} />
+                        <img src={imagen3} alt="Cultura" />
                         <div className="titularTercero">
                             <h1>Un viaje a los profunde de Asia</h1>
                             <p>Recorremos los paises del sudeste asiatico, para escubriri su cultura</p>
@@ -73,13 +73,13 @@ export const Home = () => {
 
                     </div>
                     <div className="publicidad">
-                        <img src={imagen5} className="img1" />
-                        <img src={imagen6} />
+                        <img src={imagen5} className="img1" alt="propaganda" />
+                        <img src={imagen6} alt="propaganda" />
 
                     </div>
                 </div>
                 <div className="publicidades">
-                    <img src={imagen4} />
+                    <img src={imagen4} alt="propaganda" />
 
                 </div>
             </div>
@@ -129,7 +129,7 @@ export const Home = () => {
                     </div>
                 </div>
                 <div className="publicidades">
-                    <img src={imagen4} />
+                    <img src={imagen4} alt="propaganda" />
 
                 </div>
             </div>
@@ -145,7 +145,7 @@ export const Home = () => {
                     <Noticia img={imagen12} />
                 </div>
                 <div className="publicidades">
-                    <img src={imagen4} />
+                    <img src={imagen4} alt="propaganda" />
 
                 </div>
                 <div className="NotLoc">
