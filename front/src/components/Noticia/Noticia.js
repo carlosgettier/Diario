@@ -1,12 +1,11 @@
 import React from 'react'
-import imagen3 from '../../assets/image/turismo.jpg'
 import './noticias.css'
 
 export const Noticia = ({ img }) => {
     return (
         <div className="contenedorNot">
 
-            <img src={img} />
+            <img src={img} alt="por definir"/>
             <div className="seccionNot">
                 <h5 >Cultura</h5>
             </div>
