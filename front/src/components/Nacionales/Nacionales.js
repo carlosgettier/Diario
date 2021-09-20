@@ -7,14 +7,14 @@ export const Nacionales = () => {
 
     const [local, setLocal] = useState([])
 
-    useEffect(async () => {
+    useEffect(() => {
+      const fetchData = async () => {
         const res = await fetch(`http://localhost:3001/api/noticas/pedido/nacionales`)
         const data = await res.json()
         setLocal(data)
-
-
+      }
+      fetchData() 
     }, [])
-
 
     return (
         <div className="localInfo">
