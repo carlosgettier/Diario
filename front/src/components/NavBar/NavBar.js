@@ -22,9 +22,9 @@ export const NavBar = () => {
                             <li className="nav-item"><Link className="nav-link" to="/noticias/Deportes">Deportes</Link></li>
 
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button className="nav-link dropdown-toggle reset-buton-nav" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                     Institucional
-                                </a>
+                                </button>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><Link className="dropdown-item" to="/noticias/nosotros">¿Quienes Somos?</Link></li>
                                     <li><Link className="dropdown-item" to="/noticias/contactos">contactos</Link></li>
@@ -32,9 +32,9 @@ export const NavBar = () => {
                                 </ul>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button className="nav-link dropdown-toggle reset-buton-nav" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                     Noticias
-                                </a>
+                                </button>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><Link className="dropdown-item" to="/noticias/locales">locales</Link></li>
                                     <li><Link className="dropdown-item" to="/noticias/provinciales">Provinciales</Link></li>

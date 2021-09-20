@@ -18,3 +18,7 @@
   font-weight: bold;
   font-family: portada-light;
 }
+.reset-buton-nav {
+  background-color: transparent;
+  border: none;
+}
