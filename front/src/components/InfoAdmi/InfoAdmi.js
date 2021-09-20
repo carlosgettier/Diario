@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import futbol from '../../assets/image/futbol.jpg'
+// import futbol from '../../assets/image/futbol.jpg'
 import './infoAdmi.css'
 
 

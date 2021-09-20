@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import './InfoMuestra.css'
-import futbol from '../../assets/image/futbol.jpg'
+// import futbol from '../../assets/image/futbol.jpg'
 import { Link } from 'react-router-dom'
 
 export const InfoMuestra = ({ info }) => {
