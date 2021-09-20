@@ -5,7 +5,7 @@ import './propaganda.css'
 export const Propaganda = () => {
     return (
         <div>
-            <img src={auto} className="imgPropaganda" />
+            <img src={auto} className="imgPropaganda" alt="Publicidad" />
 
         </div>
     )
