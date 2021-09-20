@@ -2,7 +2,6 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  Link
 } from "react-router-dom";
 import { Locales } from './components/Locales/Locales';
 import { Home } from './components/Home/Home';

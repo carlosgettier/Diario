@@ -9,12 +9,14 @@ export const Administracion = () => {
     const [admi, setadmi] = useState([])
 
 
-    useEffect(async () => {
+    useEffect(() => {
+      const fetchData = async () => {
         const data = await fetch('http://localhost:3001/api/noticias')
         const res = await data.json()
         setadmi(res)
         console.log(res)
-
+      }
+      fetchData()
     }, [])
 
     return (
