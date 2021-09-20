@@ -1,6 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import './nuevoUser.css'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import axios from 'axios'
 
 export const NuevoUser = () => {
